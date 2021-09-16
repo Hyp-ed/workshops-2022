@@ -11,6 +11,7 @@ add_custom_target("${target}-format"
 add_dependencies(${target} "${target}-format")
 target_link_libraries(${target}
     gtest
+    workshop-lib
 )
 
 add_custom_target(test
