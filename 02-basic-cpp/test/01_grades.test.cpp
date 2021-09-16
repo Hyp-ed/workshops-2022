@@ -15,7 +15,7 @@ TEST(GradesTest, congratulationsFor100)
   ASSERT_EQ("Congratulations!", workshop::emptyOrCongratulations(100));
 }
 
-TEST(GradeTest, letterGrades)
+TEST(GradesTest, letterGrades)
 {
   ASSERT_EQ("A1", workshop::scoreToLetterGrade(100));
   ASSERT_EQ("A1", workshop::scoreToLetterGrade(95));

@@ -30,5 +30,20 @@ $ make test
 
 All tests should fail.
 
-### Exercise 1
+### Exercise 1 - Grades
 
+In `src/01_grades.cpp` there's a function `emptyOrCongratulations` which takes an integer `score` and returns a string.
+> Modify it so that it returns `"Congratulations!"` if the score is 100 and an empty string otherwise.
+
+In the same file, there's another function `scoreToLetterGrade` with the same signature.
+> Modify it so that it converts the score into Edinburgh University Letter grades as a string. I.e. 0 to 39 is an F, 40 to 49 is a D, 50 to 59 is a E, 60 to 69 is a D, ..., 90 to 100 is an A1.
+
+### Exercise 2 - Temperatures
+
+In `src/02_temperatures` there are two functions, `celsiusToKelvin` and `celsiusToFahrenheit`. Both take a `double` and return another `double`.
+They do what you would expect them to.
+> Modify them so that the former converts the given temperature into Kelving and the latter into Fahrenheit. Be accurate to two decimal places.
+
+Note:
+- From Celsius to Kelvin: `K = C + 273.15`
+- From Celsius to Fahrenheit: `F = C * 9 / 5 + 32`

@@ -5,35 +5,35 @@
 
 namespace hyped::test {
 
-TEST(TemperatureTest, zeroCelsiusToKelvin)
+TEST(TemperaturesTest, zeroCelsiusToKelvin)
 {
-  ASSERT_EQ(272.15, std::round(workshop::celsiusToKelvin(0.0) * 100.0) / 100.0);
+  ASSERT_EQ(273.15, std::round(workshop::celsiusToKelvin(0.0) * 100.0) / 100.0);
 }
 
-TEST(TemperatureTest, celsiusToZeroKelvin)
+TEST(TemperaturesTest, celsiusToZeroKelvin)
 {
-  ASSERT_EQ(0, std::round(workshop::celsiusToKelvin(-272.15) * 100.0) / 100.0);
+  ASSERT_EQ(0, std::round(workshop::celsiusToKelvin(-273.15) * 100.0) / 100.0);
 }
 
-TEST(TemperatureTest, celsiusToKelvin)
+TEST(TemperaturesTest, celsiusToKelvin)
 {
-  ASSERT_EQ(305.15, std::round(workshop::celsiusToKelvin(33.0) * 100.0) / 100.0);
-  ASSERT_EQ(339.15, std::round(workshop::celsiusToKelvin(67) * 100.0) / 100.0);
-  ASSERT_EQ(372.25, std::round(workshop::celsiusToKelvin(100.1) * 100.0) / 100.0);
-  ASSERT_EQ(500.00, std::round(workshop::celsiusToKelvin(227.85) * 100.0) / 100.0);
+  ASSERT_EQ(306.15, std::round(workshop::celsiusToKelvin(33.0) * 100.0) / 100.0);
+  ASSERT_EQ(340.15, std::round(workshop::celsiusToKelvin(67) * 100.0) / 100.0);
+  ASSERT_EQ(373.25, std::round(workshop::celsiusToKelvin(100.1) * 100.0) / 100.0);
+  ASSERT_EQ(501.00, std::round(workshop::celsiusToKelvin(227.85) * 100.0) / 100.0);
 }
 
-TEST(TemeperatureTest, zeroCelsiusToFahrenheit)
+TEST(TemperaturesTest, zeroCelsiusToFahrenheit)
 {
   ASSERT_EQ(32.0, std::round(workshop::celsiusToFahrenheit(0.0) * 100.0) / 100.0);
 }
 
-TEST(TemperatureTest, celsiusToZeroFahrenheit)
+TEST(TemperaturesTest, celsiusToZeroFahrenheit)
 {
   ASSERT_EQ(0.0, std::round(workshop::celsiusToFahrenheit(-17.777778) * 100.0) / 100.);
 }
 
-TEST(TemperatureTest, celsiusToFahreheit)
+TEST(TemperaturesTest, celsiusToFahreheit)
 {
   ASSERT_EQ(91.4, std::round(workshop::celsiusToFahrenheit(33.0) * 100.0) / 100.0);
   ASSERT_EQ(152.6, std::round(workshop::celsiusToFahrenheit(67.0) * 100.0) / 100.0);
