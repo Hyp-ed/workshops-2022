@@ -1,4 +1,4 @@
-# GitHub Workshop
+# git & GitHub Workshop
 
 ## Purpose
 
