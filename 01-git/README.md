@@ -32,7 +32,7 @@ If you have any other questions but are not able to ask during the workshop, don
 
 ### Exercise 2
 
-- From your local branch `about-<your name>`, create a new branch called `attendance-<your name>`
+- From your local branch `workshop-<your name>`, create a new branch called `attendance-<your name>`
 - Create or edit the file `attendance.txt` by adding your name to it
 - Again, push your changes to the remote and open a PR
 - You are likely encounter *merge conflicts*
