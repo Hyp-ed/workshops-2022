@@ -11,8 +11,8 @@ set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 
-set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread ${COVERAGE_FLAGS} ${OPTIMISATION_FLAGS} ${WARN_FLAGS}")
-set(CMAKE_CXX_LINKER_FLAGS "${CMAKE_CXX_LINKER_FLAGS} -stdlib=libc++ -lpthread ${WARN_FLAGS}")
+set(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -pthread -Wall -Wextra -Wpedantic")
+set(CMAKE_CXX_LINKER_FLAGS "${CMAKE_CXX_LINKER_FLAGS} -stdlib=libc++ -lpthread -Wall -Wextra -Wpedantic")
 
 message("compile flags: ${CMAKE_CXX_FLAGS}")
 message("link flags:    ${CMAKE_CXX_LINKER_FLAGS}")
