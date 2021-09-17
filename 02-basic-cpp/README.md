@@ -33,17 +33,63 @@ All tests should fail.
 ### Exercise 1 - Grades
 
 In `src/01_grades.cpp` there's a function `emptyOrCongratulations` which takes an integer `score` and returns a string.
+
 > Modify it so that it returns `"Congratulations!"` if the score is 100 and an empty string otherwise.
 
 In the same file, there's another function `scoreToLetterGrade` with the same signature.
+
 > Modify it so that it converts the score into Edinburgh University Letter grades as a string. I.e. 0 to 39 is an F, 40 to 49 is a D, 50 to 59 is a E, 60 to 69 is a D, ..., 90 to 100 is an A1.
 
 ### Exercise 2 - Temperatures
 
-In `src/02_temperatures` there are two functions, `celsiusToKelvin` and `celsiusToFahrenheit`. Both take a `double` and return another `double`.
+In `src/02_temperatures.cpp` there are two functions, `celsiusToKelvin` and `celsiusToFahrenheit`. Both take a `double` and return another `double`.
 They do what you would expect them to.
+
 > Modify them so that the former converts the given temperature into Kelving and the latter into Fahrenheit. Be accurate to two decimal places.
 
 Note:
+
 - From Celsius to Kelvin: `K = C + 273.15`
 - From Celsius to Fahrenheit: `F = C * 9 / 5 + 32`
+
+### Exercise 3 - Sums & Counting
+
+In `src/03_sums.cpp` there is a function `sum` that takes an integer `l` and a _pointer_ `a` and returns a double.
+
+> Modify it so that it returns the sum of all the values in the array starting at `a` with length `l`. The sum of zero items is zero.
+
+Note, there are two (equally valid) ways of accessing elements of a C-style array:
+
+```cpp
+const double arr[5] = {1, 2, 3, 4, 5};
+const double x = arr[3];
+const double y = *(arr + 3);
+```
+
+Neither is better than the other.
+
+There's another implementation of the function `sum` which takes a C++ vector (a resizable array; not to be confused with vectors from linear algebra!).
+
+> Modify this implementation so that it returns the sum of all the elements of the vector.
+
+You may want to use range-based `for`-loops:
+
+```cpp
+const std::vector<double> v = {1, 2, 3, 4, 5};
+for (const double x : v) {
+    // in each iteration, x will take the value of the next element of v
+}
+```
+
+The next function in the file is called `absoluteSum`.
+By absolute sum we mean the sum of the absolute values of all the elements.
+
+> Modify `absoluteSum` so that it computes the absolute sum of all the elements of the given vector.
+
+You may find the [abs](https://www.cplusplus.com/reference/cmath/abs/) function from the C++ standard library helpful.
+Note that you will have to include the appropriate header file! (see the example on the linked page)
+
+The last function in the file is called `countNegatives`.
+It also takes a vector of floating point numbers, but it returns an unsigned integer.
+
+> Modify it so that it returns the number of negative elements in the vector.
