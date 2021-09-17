@@ -8,12 +8,14 @@ If you are unable to attend the workshop, please try and complete it before onbo
 We will be available during the workshop time to help you if you have any problems related to the guide examples and the workshop exercises.
 If you have any other questions but are not able to ask during the workshop, don't hesitate to message us on Slack!
 
-## Workshop Requirements
+## Preparation
 
-- git installed on your laptop
-- signed up to GitHub
-- filled in the GitHub details form (if you don't where to find this, message us on Discord)
-- gone through the "[Using git and GitHub](https://github.com/Hyp-ed/hyped-2022/wiki/Using-git-and-GitHub)" guide
+> Do this on another day, before the workshop! This may take some time.
+
+1. Install git on your machine
+2. Sign up to GitHub
+3. Fill in the GitHub details form (if you can't find it, message us)
+4. Go through the "[Using git and GitHub](https://github.com/Hyp-ed/hyped-2022/wiki/Using-git-and-GitHub)" guide
 
 ## Workshop Exercises
 
