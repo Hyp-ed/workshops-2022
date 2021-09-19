@@ -100,3 +100,36 @@ The last function in the file is called `countNegatives`.
 It also takes a vector of floating point numbers, but it returns an unsigned integer.
 
 > Modify it so that it returns the number of negative elements in the vector.
+
+### Exercise 4 - Pancakes
+
+In `src/04_pancakes.hpp` you can see a struct containing information about how many pancakes a particular person had for breakfast.
+
+```cpp
+struct PancakesEatenBy {
+  std::string name;
+  int num_pancakes_eaten;
+};
+```
+
+In particular, each object of type `PancakesEatenBy` has two attributes:
+
+1. A string containing the name of the person, and
+2. an integer representing the number of pancakes eaten by that person.
+
+In the source file (`src/04_pancakes.cpp`) you can find a function `mostPancakesEaten`.
+
+> Modify it so that, given a vector of `PancakesEatenBy` objects, it returns the the one where the number of eaten pancakes is the highest.
+
+Below this, you can see another function, `moreThanNPancakesEaten`, which not only takes a vector of `PancakeEaten` objects, but also an integer `n`.
+
+> Modify it so that it returns a vector of those `PancakeEaten` objects where the number of pancakes eaten is strictly greater than `n`.
+
+At the end of the file there is another function, `nMostPancakesEaten`.
+
+> (Optional) Modify it so that it returns a vector containing the `n` entries from the original input that have higher numbers of pancakes eaten than any other element, in any order. 
+
+There are many ways of doing this, some are more efficient than others.
+You should not worry about efficiency, though, so any solution is fine.
+
+Don't worry if you are struggling with this, just move on to the next question.
