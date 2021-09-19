@@ -30,6 +30,11 @@ $ make test
 
 All tests should fail.
 
+It is recommended that you create a branch `ws2-<your name>` that you will be working on.
+This branch won't be merged, but it will help you practice the workflow of adding, commiting and pushing changes.
+
+The exercises may seem easy to some of you, especially the actual programming involved.
+
 ### Exercise 1 - Grades
 
 In `src/01_grades.cpp` there's a function `emptyOrCongratulations` which takes an integer `score` and returns a string.
@@ -69,6 +74,8 @@ const double y = *(arr + 3);
 Neither is better than the other.
 
 There's another implementation of the function `sum` which takes a C++ vector (a resizable array; not to be confused with vectors from linear algebra!).
+Unless we absolutely have to use C-style arrays, e.g. due to a libraries' interface, we always prefer collections like vectors.
+They provide essentially identical performance, but they are much safer to use.
 
 > Modify this implementation so that it returns the sum of all the elements of the vector.
 
