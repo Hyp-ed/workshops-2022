@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Basic C++ Workshop
 
 ## Purpose
@@ -181,3 +182,6 @@ For that purpose there are two more functions, `stringToGrade` and `gradeToStrin
 
 This is still not ideal. Using the empty string as an implicit null value has its problems.
 There is a solution to this, namely `std::optional<T>`, that we will get into in the Advanced C++ workshop.
+=======
+# Basic C++ Workshop
+>>>>>>> master
