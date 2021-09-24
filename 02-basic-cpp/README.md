@@ -50,7 +50,7 @@ In the same file, there's another function `scoreToLetterGrade` with the same si
 In `src/02_temperatures.cpp` there are two functions, `celsiusToKelvin` and `celsiusToFahrenheit`. Both take a `double` and return another `double`.
 They do what you would expect them to.
 
-> Modify them so that the former converts the given temperature into Kelving and the latter into Fahrenheit. Be accurate to two decimal places.
+> Modify them so that the former converts the given temperature into Kelvin and the latter into Fahrenheit. Be accurate to two decimal places.
 
 Note:
 
