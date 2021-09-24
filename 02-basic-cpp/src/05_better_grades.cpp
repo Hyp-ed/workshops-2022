@@ -14,7 +14,7 @@ Grade stringToGrade(const std::string str)
 
 std::string gradeToString(const Grade grade)
 {
-  return "Dummy Grade";
+  return "";
 }
 
 }  // namespace hyped::workshop

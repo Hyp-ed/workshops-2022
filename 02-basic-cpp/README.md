@@ -28,7 +28,7 @@ $ cmake ..
 $ make test
 ```
 
-All tests should fail.
+Most tests should fail.
 
 It is recommended that you create a branch `ws2-<your name>` that you will be working on.
 This branch won't be merged, but it will help you practice the workflow of adding, commiting and pushing changes.
@@ -170,6 +170,8 @@ Now we can go back to the source file (`05_better_grades.cpp`).
 
 > Copy your implementation of `scoreToLetterGrade` implementation from `01_grades.cpp` and change it so that it returns the appropriate values of the `Grade` enum.
 
+*Note that no additional tests will pass until you finish the entire exercise.*
+
 While this new implementation is more efficient, we want to maintain some degree of backwards compatibility.
 For that purpose there are two more functions, `stringToGrade` and `gradeToString`, in the source file.
 
@@ -178,8 +180,4 @@ For that purpose there are two more functions, `stringToGrade` and `gradeToStrin
 > string in the `Grade::kInvalid` case.
 
 This is still not ideal. Using the empty string as an implicit null value has its problems.
-<<<<<<< HEAD
 There is a solution to this, namely `std::optional<T>`, that we will get into in the Advanced C++ workshop.
-=======
-There is a solution to this, namely `std::optional<T>`, that we will get into in the Advanced C++ workshop.
->>>>>>> cb5cc88
