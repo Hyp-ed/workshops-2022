@@ -3,7 +3,7 @@
 ## Purpose
 
 In this workshop, you will learn how to write and edit basic C++ programs.
-If you are not able to attend the workshop, please complete it beofre onboarding starts as this crucial to be able to work with your team.
+If you are not able to attend the workshop, please complete it before onboarding starts as this is crucial to be able to work with your team.
 
 We will be available during the workshop time to help you if you have any problems related to the workshop exercises.
 If you have any other questions but are not able to ask during the workshop, don't hesitate to message us on Slack!
@@ -178,4 +178,8 @@ For that purpose there are two more functions, `stringToGrade` and `gradeToStrin
 > string in the `Grade::kInvalid` case.
 
 This is still not ideal. Using the empty string as an implicit null value has its problems.
+<<<<<<< HEAD
 There is a solution to this, namely `std::optional<T>`, that we will get into in the Advanced C++ workshop.
+=======
+There is a solution to this, namely `std::optional<T>`, that we will get into in the Advanced C++ workshop.
+>>>>>>> cb5cc88
