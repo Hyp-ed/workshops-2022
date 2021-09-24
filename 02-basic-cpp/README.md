@@ -11,7 +11,7 @@ If you have any other questions but are not able to ask during the workshop, don
 ## Preparation
 
 1. Go through this [guide](https://github.com/Hyp-ed/hyped-2022/wiki/CPP-Getting-Started) to set up a C++ development environment.
-2. Go through the first five chapters of the [Codecademy C++ course](https://www.codecademy.com/learn/learn-c-plus-plus).
+2. Go through [Codecademy C++ course](https://www.codecademy.com/learn/learn-c-plus-plus).
 3. (Recommended) Read chapters 0, 1, 2, 4, 5 and 6 from [Learn C++](https://www.learncpp.com/).
 
 ## Exercises
@@ -133,3 +133,49 @@ There are many ways of doing this, some are more efficient than others.
 You should not worry about efficiency, though, so any solution is fine.
 
 Don't worry if you are struggling with this, just move on to the next question.
+
+### Exercise 5 - Grades, but better
+
+In Exercise 1 we defined a function `scoreToLetterGrade` that converts numerical exam scores to a string representation of a letter grade.
+
+However, this has several shortcomings.
+For one, a string can have many different values whereas we have a very limited number of possible grades.
+Further, strings are rather complicated data structures and way too complicated for simply representing grades.
+
+Therefore, you can find a new version of the function in `05_better_grades.[ch]pp`. 
+You may notice that this new version has a different type signature.
+In particular, the return type has changed to `Grades`.
+This is a type defined within the `hyped::workshp` namespace, i.e. a custom type we created for a specific purpose.
+You can find the definition in the header file (`05_better_grades.hpp`):
+
+```cpp
+enum Grade { kInvalid = -1 };
+```
+
+As you can see, it's defined as an enum that currently only has a single value.
+If you don't know how to use enums, you can have a quick look [here](https://www.tutorialspoint.com/how-to-use-enums-in-cplusplus).
+This is not quite what we want.
+Instead, it should be able to take the following values:
+
+- invalid: to represent an error
+- A1, A2, A3
+- B
+- C
+- D
+- F
+
+> Modify the enum so that it can take values representing each of the above. Remember to follow the style guide.
+
+Now we can go back to the source file (`05_better_grades.cpp`).
+
+> Copy your implementation of `scoreToLetterGrade` implementation from `01_grades.cpp` and change it so that it returns the appropriate values of the `Grade` enum.
+
+While this new implementation is more efficient, we want to maintain some degree of backwards compatibility.
+For that purpose there are two more functions, `stringToGrade` and `gradeToString`, in the source file.
+
+> Modify them so that they convert the two representations of a grade between each other. You should use `switch` statements. 
+> Make sure you handle the edge cases properly (e.g. by using the `default` case in your switch). You should return an empty
+> string in the `Grade::kInvalid` case.
+
+This is still not ideal. Using the empty string as an implicit null value has its problems.
+There is a solution to this, namely `std::optional<T>`, that we will get into in the Advanced C++ workshop.
