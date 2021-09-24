@@ -9,4 +9,7 @@ You will learn to use git and GitHub on a repository with multiple contributors.
 
 ## Workshop 2: Basic C++
 
+The second workshop is located [here](https://github.com/Hyp-ed/workshops-2022/tree/master/02-basic-cpp).
+You will learn how to solve small problems in a C++ project not too dissimilar to the main repository.
+
 ## Workshop 3: Advanced C++
