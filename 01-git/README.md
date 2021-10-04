@@ -26,7 +26,7 @@ If you have any other questions but are not able to ask during the workshop, don
 - Create a new branch from `master` and call it `workshop-<your name>`
 - Change to the branch created above
 - Create a file `about-<your name>.txt` and write three fun facts about yourself
-- Once you are satisfied with what you have written, commite the changes and push them to your branch
+- Once you are satisfied with what you have written, commit the changes and push them to your branch
     - *Remember to write a meaningful commit message!*
 - Create a pull request
 - If there are any other open pull requests waiting to be merged, pick one of them and review it
