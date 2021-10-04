@@ -35,11 +35,11 @@ If you have any other questions but are not able to ask during the workshop, don
 ### Exercise 2
 
 - From your local branch `workshop-<your name>`, create a new branch called `attendance-<your name>`
-- Create or edit the file `attendance.txt` by adding your name to it
+- Create or edit the file `attendance.txt` by adding your name to it in such a way that alphabetical order is preserved
 - Again, push your changes to the remote and open a PR
-- You are likely encounter *merge conflicts*
+- You are likely to encounter *merge conflicts*
 - To resolve them, go back to your terminal, pull the newest changes from the `master` branch and merge them into `about-<your name>`
 - In `attendance.txt`, you will find conflict markers `<<<<<<<`, `=======` and `>>>>>>>`
-- You should delete them and edit the rest so that both your names as well as those that were already there are present
+- You should delete them and edit the rest so that both your names as well as those that were already there are present and the alphabetical order is maintained
 - Once you're done, commit your changes and push again
 - Unless someone else was faster than you, the PR should be ready to be merged now
