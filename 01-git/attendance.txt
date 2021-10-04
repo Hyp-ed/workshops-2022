@@ -1,11 +1,9 @@
-Callum McWilliam
 Aden Haussmann
+Ahmad Rafi
+Callum McWilliam
 Franz Miltz
+Kshitij Sharma
 Rachel Somerset
 Sashank Choraria
-<<<<<<< HEAD
 Tom Lonergan
 Kshitij Sharma
-=======
-Kshitij Sharma
->>>>>>> 83ae47bbe2f215cb2b0274bdd0bd7263cb6e07d0
