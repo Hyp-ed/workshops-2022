@@ -1,4 +1,4 @@
-#include <math.h>
+#include <cmath>
 
 #include <02_temperatures.hpp>
 #include <gtest/gtest.h>
