@@ -35,6 +35,7 @@ class QuadraticPolynomial {
   /* Equality operator to compare to quadratics */
   bool operator==(const QuadraticPolynomial &rhs) const { return key() == rhs.key(); }
 
+  /* Inequality operator to compare to quadratics */
   bool operator!=(const QuadraticPolynomial &rhs) const { return !(*this == rhs); }
 };
 
