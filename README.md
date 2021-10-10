@@ -13,3 +13,6 @@ The second workshop is located [here](https://github.com/Hyp-ed/workshops-2022/t
 You will learn how to solve small problems in a C++ project not too dissimilar to the main repository.
 
 ## Workshop 3: Advanced C++
+
+The thrid workshop is located [here](https://github.com/Hyp-ed/workshops-2022/tree/master/03-advanced-cpp).
+You will learn more about the standard library and testing in C++.
