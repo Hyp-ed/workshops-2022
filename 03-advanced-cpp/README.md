@@ -79,3 +79,22 @@ Finally, we want to handle some less straight forward cases.
 You can either come up with some inputs that are out of order or you may use `std::shuffle` to randomise the tests.
 
 > Modify `randomInput` to test `workshop::sortByAge` with irregular inputs.
+
+# Exercise 3 - Linear Regression
+
+For this exercise, two functions have been implemented.
+One to calculate the mean of a sample (a vector of points).
+The other performs a simple linear regression on a sample and returns a linear model.
+
+We think the implementations work, but we cannot be sure until we actually test them.
+It will be up to you to come up with some tests to verify both of them work correctly.
+
+> Create a file `test/03_linear_regression.hpp` add tests for both `calculateMean` and `linearRegression`.
+
+Note that once the file has been created you may need to delete your build directory and run CMake again.
+
+Some properties you may find interesting:
+
+1. The mean of a single point is itself.
+2. The mean of a sample lies on the linear regression line.
+3. If the data has a perfect linear relation, all the points will lie on the linear regression line.
