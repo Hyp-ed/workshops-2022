@@ -80,7 +80,7 @@ You can either come up with some inputs that are out of order or you may use `st
 
 > Modify `randomInput` to test `workshop::sortByAge` with irregular inputs.
 
-# Exercise 3 - Linear Regression
+### Exercise 3 - Linear Regression
 
 For this exercise, two functions have been implemented.
 One to calculate the mean of a sample (a vector of points).
