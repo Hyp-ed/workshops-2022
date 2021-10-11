@@ -1,4 +1,4 @@
-cmake_minimum_required(VERSION 3.21.0 FATAL_ERROR)
+cmake_minimum_required(VERSION 3.16.0 FATAL_ERROR)
 project(workshop-02)
 
 # ------------------------------------------------- #
@@ -6,7 +6,6 @@ project(workshop-02)
 # ------------------------------------------------- #
 
 
-set(CMAKE_CXX_COMPILER "clang++")
 set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
