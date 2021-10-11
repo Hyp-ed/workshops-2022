@@ -1,6 +1,7 @@
 #include "02_sorting.hpp"
 
 #include <algorithm>
+#include <vector>
 
 namespace hyped::workshop {
 
