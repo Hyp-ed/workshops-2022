@@ -4,7 +4,7 @@
 
 namespace hyped::workshop {
 
-enum Grade { kInvalid = -1 };
+enum Grade { kInvalid, kA1, kA2, kA3, kB, kC, kD, kF };
 
 Grade scoreToGrade(const int score);
 
